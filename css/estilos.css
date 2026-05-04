@@ -1,0 +1,177 @@
+body{
+    background-color: #212529;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-img {
+  height: 150px;            
+  width: auto;             
+}
+.navbar {
+background-color: rebeccapurple !important;
+
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: azure !important;
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.navbar a {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.carousel-item {
+    min-height: 400px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    font-size: 18px;
+    margin: 10px auto;
+}
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.servicios {
+    padding: 80px 0;
+}
+.card {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-body {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: white;
+    text-align: justify;
+    flex-grow: 0;
+    
+}
+.bg-consola1, .bg-consola2, .bg-consola3 {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra exterior */
+    overflow: hidden; /* importante para que no se desborde el overlay */
+}
+
+.bg-consola1 {
+   
+    background-color: #E60012;
+}
+.bg-consola2 {
+
+    background-color: #107C10;
+    
+}
+.bg-consola3 {
+    
+    background-color: white;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain; /* mantiene proporciones, evita deformaciones */
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* efecto zoom suave al pasar el mouse */
+}
+
+
+.icon-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+.icon-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.icon-box:hover {
+    transform: translateY(-10px);
+}.icon-box i {
+    color: rebeccapurple;
+    font-size: 50px;
+}
+    margin-bottom: 15px;
+.icon-box h5 {
+font-weight: 600;
+}
+        
+.card img {
+    height: 200px;
+    object-fit: contain;  /* ajusta sin recortar */
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: justify;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.card .btn {
+    width: 100%;
+}
+
