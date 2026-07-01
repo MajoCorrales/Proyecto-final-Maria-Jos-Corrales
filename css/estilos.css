@@ -1,15 +1,1255 @@
-body {
-    font-family: Arial, sans-serif;
+/* =====================================================
+   GLOBAL EXPRESS CR
+   ESTILOS GENERALES
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h2 {
-    font-weight: bold;
+body{
+    font-family:'Poppins', sans-serif;
+    line-height:1.8;
+    background:#ffffff;
+    color:#222;
+    padding-top:56px;
 }
 
-.card {
-    border-radius: 10px;
+
+/* =====================================================
+   NAVBAR GLOBAL
+===================================================== */
+
+.navbar{
+    background:linear-gradient(90deg,#111827,#1f2937) !important;
+    padding:15px 0;
+    box-shadow:0 3px 15px rgba(0,0,0,0.15);
+    z-index:9999;
 }
 
-footer {
-    font-size: 14px;
+.navbar-brand{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.navbar .nav-link{
+    color:#d1d5db !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:0.3s;
+}
+
+.navbar .nav-link:hover{
+    color:#ffffff !important;
+}
+
+.navbar .nav-link.active{
+    color:#ffffff !important;
+    font-weight:600;
+}
+
+
+/* LOGO NAVBAR */
+
+.logo-navbar{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 4px rgba(255,255,255,0.15));
+}
+
+
+/* =====================================================
+   HERO PAGINA INICIO
+===================================================== */
+
+.hero-banner{
+    height:100vh;
+    background-image:url('../assets/img/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    /* elimina espacio superior */
+    margin-top:-56px;
+    padding-top:56px;
+}
+
+.overlay-banner{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* TITULOS HERO */
+
+.hero-title{
+    font-size:70px;
+    font-weight:700;
+    max-width:1100px;
+    margin:auto;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.8);
+}
+
+.hero-text{
+    font-size:22px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    color:#ffffff;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.9);
+}
+
+
+/* =====================================================
+   BOTONES GENERALES
+===================================================== */
+
+.boton-negro{
+    background:#000000 !important;
+    border:none;
+    padding:14px 30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.boton-negro:hover{
+    background:#333333 !important;
+}
+
+
+/* BOTON AZUL */
+
+.boton-azul{
+    background:#0d6efd;
+    border:none;
+    padding:14px 40px;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.boton-azul:hover{
+    background:#084298;
+}
+
+
+/* =====================================================
+   TARJETAS GENERALES
+===================================================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:0.3s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card-img-top{
+    height:250px;
+    object-fit:cover;
+}
+
+
+/* =====================================================
+   FORMULARIO COTIZADOR INICIO
+===================================================== */
+
+.cotizador-box{
+    background:#f5f7fa;
+    padding:50px;
+    border-radius:18px;
+}
+
+.cotizador-box h2{
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.cotizador-box label{
+    font-weight:500;
+    margin-bottom:8px;
+}
+
+.cotizador-box input,
+.cotizador-box select{
+    height:50px;
+    padding:14px;
+    border-radius:10px;
+}
+
+.cotizador-box .form-control{
+    border-radius:10px;
+}
+
+
+/* =====================================================
+   ESTADISTICAS
+===================================================== */
+
+.estadisticas-section{
+    background:#0d6efd;
+    padding:70px 0;
+    margin:50px 0;
+    color:#ffffff;
+}
+
+.estadisticas-section h2{
+    font-size:50px;
+    font-weight:bold;
+}
+
+
+/* =====================================================
+   IMAGENES GENERALES
+===================================================== */
+
+.imagen-general{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.carrusel-img{
+    height:450px;
+    object-fit:cover;
+}
+
+
+/* =====================================================
+   PARALLAX GENERAL
+===================================================== */
+
+.parallax{
+    min-height:400px;
+    background-image:url('../assets/img/logistica.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    color:white;
+    border-radius:12px;
+}
+
+
+/* =====================================================
+   CTA FINAL PAGINA INICIO
+===================================================== */
+
+.cta-premium{
+    background:linear-gradient(135deg,#0d6efd,#003b8e);
+    padding:90px 20px;
+    margin-top:70px;
+}
+
+.cta-premium h2{
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+}
+
+.cta-premium p{
+    font-size:20px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:40px;
+    color:#e5e7eb;
+}
+
+.cta-premium .btn{
+    padding:14px 30px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+
+/* =====================================================
+   WHATSAPP FLOTANTE
+===================================================== */
+
+.whatsapp-float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    right:30px;
+    bottom:30px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:35px;
+    text-decoration:none;
+    z-index:9999;
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    color:white;
+}
+
+
+/* =====================================================
+   FOOTER GENERAL SIMPLE
+===================================================== */
+
+footer{
+    font-size:14px;
+    padding:20px;
+}
+
+
+/* =====================================================
+   RESPONSIVE GENERAL
+===================================================== */
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:38px;
+    }
+
+    .hero-text{
+        font-size:18px;
+    }
+
+    .card-img-top{
+        height:200px;
+    }
+
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        font-size:28px;
+    }
+
+    .cotizador-box{
+        padding:25px;
+    }
+
+    .cta-premium h2{
+        font-size:30px;
+    }
+
+    .cta-premium p{
+        font-size:17px;
+    }
+
+}
+/* =====================================================
+   PAGINA SERVICIOS
+===================================================== */
+
+
+/* HERO SERVICIOS */
+
+.hero-servicios-custom{
+    height:95vh;
+    background-image:url('../assets/img/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-overlay-servicios{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-servicios-title{
+    font-size:68px;
+    font-weight:700;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-servicios-text{
+    font-size:24px;
+    max-width:800px;
+    margin:auto;
+    color:white;
+}
+
+
+/* RASTREO */
+
+.rastreo-section{
+    background:#f8fafc;
+    padding:80px 0;
+}
+
+.rastreo-card{
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    max-width:900px;
+    margin:auto;
+}
+
+
+/* MAPA */
+
+.mapa-empresa iframe{
+    width:100%;
+    height:420px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* CLIENTES */
+
+.cliente-card{
+    border:none;
+    border-radius:18px;
+    transition:0.3s;
+}
+
+.cliente-card:hover{
+    transform:translateY(-8px);
+}
+
+.cliente-foto{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #0d6efd;
+}
+
+
+/* CONTADOR */
+
+.contador-section{
+    background:#0d6efd;
+    padding:80px 0;
+    color:white;
+}
+
+.contador-section h1{
+    font-size:80px;
+    font-weight:700;
+}
+
+
+/* BANNER FINAL SERVICIOS */
+
+.servicios-banner-final{
+    height:420px;
+    background-image:url('../assets/img/logistica.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+}
+
+
+/* OVERLAY SERVICIOS */
+
+.contact-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.contact-overlay h2{
+    font-size:42px;
+    font-weight:700;
+    color:white;
+    margin-bottom:12px;
+    letter-spacing:0.5px;
+    text-shadow:none;
+}
+
+.contact-overlay p{
+    font-size:20px;
+    color:#e5e7eb;
+    margin-top:0;
+    font-weight:400;
+    line-height:1.6;
+}
+
+
+/* FAQ */
+
+.accordion-button{
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+    background:#0d6efd;
+    color:white;
+}
+
+
+/* RESPONSIVE SERVICIOS */
+
+@media(max-width:768px){
+
+    .hero-servicios-title{
+        font-size:38px;
+    }
+
+    .hero-servicios-text{
+        font-size:18px;
+    }
+
+    .rastreo-card{
+        padding:25px;
+    }
+
+    .contador-section h1{
+        font-size:50px;
+    }
+
+}
+
+
+
+/* =====================================================
+   PAGINA CONTACTO
+===================================================== */
+
+
+/* HERO CONTACTO */
+
+.hero-contacto{
+    height:70vh;
+    background-image:url('../assets/img/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.overlay-contacto{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    align-items:center;
+}
+
+.contacto-titulo{
+    font-size:65px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.5);
+    color:white;
+}
+
+.contacto-texto{
+    font-size:24px;
+    max-width:800px;
+    margin:auto;
+    color:white;
+}
+
+
+/* FORMULARIO CONTACTO */
+
+.contact-card{
+    background:white;
+    padding:45px;
+    border-radius:18px;
+    border:none;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+/* INFORMACION CONTACTO */
+
+.contact-info{
+    padding:60px 0;
+    background:#f8f9fa;
+}
+
+.info-box{
+    padding:30px;
+    transition:0.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+}
+
+.info-box i{
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.info-box h4{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+
+/* BANNER CONTACTO */
+
+.contact-banner{
+    height:400px;
+    background-image:url('../assets/img/logistica.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+}
+
+
+
+/* =====================================================
+   PAGINA NOSOTROS
+===================================================== */
+
+
+/* HERO NOSOTROS */
+
+.hero-nosotros-custom{
+    height:95vh;
+    background-image:url('../assets/img/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-overlay-nosotros{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.60);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-nosotros-title{
+    font-size:70px;
+    font-weight:700;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.8);
+    color:white;
+}
+
+.hero-nosotros-text{
+    font-size:24px;
+    max-width:850px;
+    margin:auto;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+    color:white;
+}
+
+
+/* HISTORIA */
+
+.historia-img{
+    border-radius:18px;
+    height:420px;
+    width:100%;
+    object-fit:cover;
+}
+
+
+/* FUNDADORES */
+
+.fundador-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0d6efd;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* PARALLAX NOSOTROS */
+
+.nosotros-parallax{
+    height:450px;
+    background-image:url('../assets/img/logistica.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.nosotros-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* CAJA TEXTO */
+
+/* CAJA TEXTO PARALLAX NOSOTROS */
+
+.nosotros-box{
+    background:transparent;      /* elimina cuadro blanco */
+    padding:45px 70px;
+    border-radius:18px;
+    max-width:850px;
+}
+
+
+/* TEXO BLANCO */
+
+.nosotros-box h2{
+    color:#ffffff;
+    font-size:42px;
+    font-weight:700;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.nosotros-box p{
+    color:#ffffff;
+    font-size:20px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+.nosotros-box{
+    background:none;
+    padding:20px;
+    max-width:850px;
+}
+.nosotros-box,
+.nosotros-box h2,
+.nosotros-box p{
+    color:white !important;
+}
+
+.nosotros-box h2{
+    color:#111;
+    font-size:42px;
+    font-weight:700;
+}
+
+.nosotros-box p{
+    color:#444;
+    font-size:20px;
+}
+
+
+/* MISION Y VISION */
+
+.card h3{
+    font-weight:600;
+}
+
+
+/* RESPONSIVE NOSOTROS + CONTACTO */
+
+@media(max-width:768px){
+
+    .hero-nosotros-title{
+        font-size:40px;
+    }
+
+    .hero-nosotros-text{
+        font-size:18px;
+    }
+
+    .nosotros-box{
+        padding:25px;
+    }
+
+    .nosotros-box h2{
+        font-size:28px;
+    }
+
+    .fundador-img{
+        width:130px;
+        height:130px;
+    }
+
+    .contacto-titulo{
+        font-size:38px;
+    }
+
+    .contacto-texto{
+        font-size:18px;
+    }
+
+}
+/* =====================================================
+   LOGIN CLIENTES
+===================================================== */
+
+.login-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:#f8f9fa;
+    padding:100px 0;
+}
+
+.login-card{
+    background:#ffffff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.img-login{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+
+/* INPUTS LOGIN */
+
+.login-card .form-control{
+    height:48px;
+    border-radius:10px;
+}
+
+.login-card button{
+    padding:12px;
+    font-weight:600;
+}
+
+
+
+/* =====================================================
+   DASHBOARD CLIENTES
+===================================================== */
+
+
+/* HERO DASHBOARD */
+
+.dashboard-hero{
+    height:60vh;
+    background-image:url('../assets/img/dashboard-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.dashboard-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    align-items:center;
+}
+
+.dashboard-overlay h1{
+    font-weight:700;
+}
+
+.dashboard-overlay p{
+    font-size:22px;
+}
+
+
+/* CARDS DASHBOARD */
+
+.dashboard-card{
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    color:white;
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+}
+
+.dashboard-card i{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+
+/* COLORES */
+
+.azul{
+    background:#0d6efd;
+}
+
+.verde{
+    background:#198754;
+}
+
+.rojo{
+    background:#dc3545;
+}
+
+.amarillo{
+    background:#ffc107;
+    color:black;
+}
+
+
+/* =====================================================
+   RASTREO DASHBOARD
+===================================================== */
+
+.rastreo-dashboard{
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.rastreo-dashboard p{
+    color:#666;
+    font-size:17px;
+}
+
+.input-rastreo{
+    padding:18px !important;
+    border-radius:10px 0 0 10px !important;
+}
+
+
+/* =====================================================
+   PANEL INFORMACION CLIENTE
+===================================================== */
+
+.panel-box{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+}
+
+.panel-box h3{
+    font-weight:600;
+}
+
+.panel-box p{
+    color:#444;
+}
+
+
+/* TABLAS */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#f8f9fa;
+}
+
+.table th{
+    font-weight:600;
+}
+
+
+/* =====================================================
+   CARRUSEL DASHBOARD
+===================================================== */
+
+.dashboard-carousel-section{
+    background:#f8f9fa;
+    margin-top:30px;
+    padding:60px 0;
+}
+
+.dashboard-carousel-section h2{
+    font-weight:700;
+}
+
+
+/* IMAGENES */
+
+.dashboard-carousel-img{
+    height:500px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+
+/* TEXTO SOBRE IMAGEN */
+
+.dashboard-caption{
+    background:rgba(0,0,0,0.45);
+    padding:20px;
+    border-radius:12px;
+}
+
+.dashboard-caption h4{
+    font-weight:700;
+    color:white;
+}
+
+.dashboard-caption p{
+    font-size:16px;
+    color:#f1f5f9;
+}
+
+
+/* CONTROLES */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-size:70%;
+}
+
+
+
+/* =====================================================
+   FOOTER GLOBAL PROFESIONAL
+===================================================== */
+
+.footer-global{
+    background:#111827;
+    color:#e5e7eb;
+    padding:50px 0 20px 0;
+    font-size:15px;
+}
+
+.footer-global h5,
+.footer-global h6{
+    color:#ffffff;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.footer-global p{
+    margin-bottom:8px;
+    color:#d1d5db;
+    line-height:1.7;
+}
+
+
+/* LINEA */
+
+.footer-line{
+    border:1px solid rgba(255,255,255,0.1);
+    margin:25px 0;
+}
+
+
+/* COPYRIGHT */
+
+.footer-copy{
+    font-size:14px;
+    color:#9ca3af;
+}
+
+
+/* ICONOS */
+
+.footer-icon{
+    color:white;
+    font-size:24px;
+    margin-left:12px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-icon:hover{
+    color:#0d6efd;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE LOGIN + DASHBOARD
+===================================================== */
+
+@media(max-width:768px){
+
+    /* LOGIN */
+
+    .login-section{
+        padding:60px 15px;
+    }
+
+    .login-card{
+        padding:25px;
+    }
+
+    .img-login{
+        height:300px;
+        margin-top:20px;
+    }
+
+
+    /* DASHBOARD */
+
+    .dashboard-hero{
+        height:45vh;
+        text-align:center;
+    }
+
+    .dashboard-overlay h1{
+        font-size:30px;
+    }
+
+    .dashboard-overlay p{
+        font-size:17px;
+    }
+
+    .dashboard-card{
+        padding:20px;
+    }
+
+    .dashboard-card i{
+        font-size:32px;
+    }
+
+    .rastreo-dashboard{
+        padding:25px;
+    }
+
+    .panel-box{
+        margin-bottom:20px;
+        padding:25px;
+    }
+
+    .dashboard-carousel-img{
+        height:300px;
+    }
+
+    .dashboard-caption{
+        padding:12px;
+    }
+
+    .dashboard-caption h4{
+        font-size:18px;
+    }
+
+    .dashboard-caption p{
+        font-size:14px;
+    }
+
+}
+
+
+/* =====================================================
+   AJUSTES FINALES GENERALES
+===================================================== */
+
+section{
+    overflow:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Poppins', sans-serif;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+/* =====================================================
+   MODAL COTIZADOR
+===================================================== */
+
+.modal-cotizacion{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.modal-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:420px;
+    animation:aparecer 0.3s ease;
+}
+
+.modal-box h3{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.modal-box p{
+    font-size:40px;
+    color:#0d6efd;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+@keyframes aparecer{
+
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
 }
